@@ -33,9 +33,10 @@ public class FruitRepository {
 
             @Override
             public void onResponse(Call<List<Fruit>> call, Response<List<Fruit>> response) {
-                if (response.isSuccessful()) {
-                   fruits = response.body();
-                   mutableLiveData.setValue(fruits);
+                if (response.isSuccessful() && response.body() != null) {
+//                   fruits = response.body();
+//                   mutableLiveData.setValue(fruits);
+                    mutableLiveData.setValue(response.body());
                 }
             }
 
