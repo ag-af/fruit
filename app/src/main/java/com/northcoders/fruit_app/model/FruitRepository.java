@@ -41,7 +41,7 @@ public class FruitRepository {
 
             @Override
             public void onFailure(Call<List<Fruit>> call, Throwable throwable) {
-                Log.i("HTTP error", throwable.getMessage());
+                Log.i("HTTP Failure", throwable.getMessage());
             }
         });
         return mutableLiveData;
