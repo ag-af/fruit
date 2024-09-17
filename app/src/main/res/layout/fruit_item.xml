@@ -7,7 +7,7 @@
     <data>
         <variable
             name="fruit"
-            type="com.northcoders.fruit_app.model.Nutritions" />
+            type="com.northcoders.fruit_app.model.Fruit" />
         <variable
             name="nutritions"
             type="com.northcoders.fruit_app.model.Nutritions" />
